@@ -1,5 +1,7 @@
 # 💼 Job Portal — Full-Stack Career & Recruitment Platform
 
+[![Live Demo](https://img.shields.io/badge/Live%20Demo-Frontend%20App-brightgreen?logo=render)](https://job-portal-hf5c.onrender.com/)
+[![API Backend](https://img.shields.io/badge/API-Live%20Backend-blue?logo=render)](https://job-portal-backend-kw91.onrender.com/)
 [![GitHub Repo](https://img.shields.io/badge/GitHub-navjot--singh--2005%2FJob--Portal-181717?logo=github)](https://github.com/navjot-singh-2005/Job-Portal)
 [![React](https://img.shields.io/badge/Frontend-React%2019-61DAFB?logo=react&logoColor=black)](https://react.dev/)
 [![Vite](https://img.shields.io/badge/Bundler-Vite-646CFF?logo=vite&logoColor=white)](https://vitejs.dev/)
