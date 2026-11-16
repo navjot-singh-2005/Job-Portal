@@ -15,7 +15,7 @@ import {
 import axios from "axios";
 import { listCompanyQuestionStyles as s } from "../assets/dummyStyles";
 
-const API_URL = "http://localhost:5000/api/interview";
+const API_URL = "https://job-portal-backend-kw91.onrender.com/api/interview";
 
 const parseCSVText = (text) => {
   const rows = [];

@@ -23,7 +23,7 @@ if (data.success) {
 
   const handleViewResume = (resumeUrl, userId) => {
     if (!resumeUrl) return;
-    const fullUrl = `http://localhost:5000/api/user/resume/${userId}`;
+    const fullUrl = `https://job-portal-backend-kw91.onrender.com/api/user/resume/${userId}`;
     const link = document.createElement("a");
     link.href = fullUrl;
     link.target = "_blank";

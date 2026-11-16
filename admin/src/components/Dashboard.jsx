@@ -7,7 +7,7 @@
             category: j.category,
             logo: j.companyLogo?.startsWith("http")
               ? j.companyLogo
-              : `http://localhost:5000${j.companyLogo || ""}`,
+              : `https://job-portal-backend-kw91.onrender.com${j.companyLogo || ""}`,
             applicants: j.applicantsCount || 0,
             status: j.status || "active",
           }));
@@ -24,7 +24,7 @@
             category: j.category,
             logo: j.companyLogo?.startsWith("http")
               ? j.companyLogo
-              : `http://localhost:5000${j.companyLogo || ""}`,
+              : `https://job-portal-backend-kw91.onrender.com${j.companyLogo || ""}`,
             applicants: j.applicantsCount || 0,
             status: j.status || "active",
           }));

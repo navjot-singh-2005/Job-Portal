@@ -54,7 +54,7 @@
       }
 
       const res = await fetch(
-        `http://localhost:5000/api/saved/question/${id}?type=interview`,
+        `https://job-portal-backend-kw91.onrender.com/api/saved/question/${id}?type=interview`,
         {
           method: "POST",
           headers: {

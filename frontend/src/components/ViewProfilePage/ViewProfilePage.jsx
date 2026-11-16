@@ -27,7 +27,7 @@
       if (profile.resume instanceof File) {
         formData.append("resume", profile.resume);
       }
-      const res = await fetch("http://localhost:5000/api/user/profile", {
+      const res = await fetch("https://job-portal-backend-kw91.onrender.com/api/user/profile", {
         method: "PUT",
         headers: {
           Authorization: `Bearer ${user.token}`,
@@ -75,7 +75,7 @@
       const url = URL.createObjectURL(profile.resume);
       window.open(url, "_blank");
     } else if (typeof profile.resume === "string") {
-      const fullUrl = `http://localhost:5000/api/user/resume/${originalProfile._id}`;
+      const fullUrl = `https://job-portal-backend-kw91.onrender.com/api/user/resume/${originalProfile._id}`;
 
       const link = document.createElement("a");
       link.href = fullUrl;

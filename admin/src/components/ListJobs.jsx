@@ -81,7 +81,7 @@ export default function ListJobs() {
         bJob.companyLogo?.startsWith("http") ||
         bJob.companyLogo?.startsWith("data:")
           ? bJob.companyLogo
-          : `http://localhost:5000${bJob.companyLogo || ""}`,
+          : `https://job-portal-backend-kw91.onrender.com${bJob.companyLogo || ""}`,
       role: bJob.roleName,
       company: bJob.companyName,
       techstack: bJob.techStack,
@@ -107,7 +107,7 @@ export default function ListJobs() {
   const fetchJobs = async () => {
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.get("http://localhost:5000/api/job/admin/jobs", {
+      const res = await axios.get("https://job-portal-backend-kw91.onrender.com/api/job/admin/jobs", {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.data.success) {
@@ -144,7 +144,7 @@ export default function ListJobs() {
       return;
     try {
       const token = localStorage.getItem("token");
-      const res = await axios.delete(`http://localhost:5000/api/job/${id}`, {
+      const res = await axios.delete(`https://job-portal-backend-kw91.onrender.com/api/job/${id}`, {
         headers: { Authorization: `Bearer ${token}` },
       });
       if (res.data.success) {
@@ -225,7 +225,7 @@ export default function ListJobs() {
       }
 
       const res = await axios.put(
-        `http://localhost:5000/api/job/${editingJob.id}`,
+        `https://job-portal-backend-kw91.onrender.com/api/job/${editingJob.id}`,
         formDataToSend,
         {
           headers: {
